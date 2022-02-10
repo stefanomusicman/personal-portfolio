@@ -15,6 +15,7 @@ const ContainerOne = styled.div`
     justify-content: center;
     align-items: center;
     padding: 40px 0px;
+    margin-bottom: 20px;
 `
 
 const DevWord = styled.div`
@@ -27,6 +28,7 @@ const DevWord = styled.div`
 const ContainerTwo = styled.div`
     display: flex;
     width: 100%;
+    margin-bottom: 20px;
 `
 
 const SloganBox = styled.div`
@@ -43,10 +45,9 @@ const Text = styled.p`
 
 const GifBox = styled.div`
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
     width: 50%;
-    padding-left: 20px;
 `
 
 /* Third Container for button and link icons */
@@ -54,7 +55,6 @@ const ContainerThree = styled.div`
     display: flex;
     justify-content: center;
     width: 100%;
-    padding-top: 20px;
 `
 
 const NextSection = styled.div`
@@ -107,8 +107,7 @@ const HeroSection = () => {
                     <Text>From making music to building web applications, I love letting my <strong style={{color: 'hsl(360, 50%, 60%)'}}>creativity</strong> go wild!</Text>
                 </SloganBox>
                 <GifBox>
-                    <img src={require("./../../Images/tablet-gif.gif")} alt="devices" style={{width: '475px', height: '475px'}}/>
-                    <img src={require("./../../Images/search-gif.gif")} alt="search" style={{width: '475px', height: '475px'}}/>
+                    <img src={require("./../../Images/iphone.gif")} alt="search" style={{width: '600px', height: '450px', borderRadius: '20px'}}/>
                 </GifBox>
             </ContainerTwo>
             <ContainerThree>
