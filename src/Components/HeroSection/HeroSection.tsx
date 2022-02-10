@@ -1,4 +1,5 @@
 import React from "react";
+// import Slideshow from "./Slideshow";
 import styled, { keyframes } from "styled-components";
 import { BsArrowDownCircle } from 'react-icons/bs';
 
@@ -101,6 +102,7 @@ const HeroSection = () => {
         <PrimaryContainer>
             <ContainerOne>
                 <DevWord>Front-End Developer</DevWord>
+                {/* <Slideshow /> */}
             </ContainerOne>
             <ContainerTwo>
                 <SloganBox>
@@ -114,7 +116,7 @@ const HeroSection = () => {
                 <NextSection>
                     <Text style={{fontSize: '35px'}}>Projects</Text>
                     <ButtonBox >
-                        <BsArrowDownCircle style={{color: 'white', width: '35px', height: '35px', cursor: 'pointer'}} />
+                        <BsArrowDownCircle style={{color: 'white', width: '36px', height: '36px', cursor: 'pointer'}} />
                     </ButtonBox>
                 </NextSection>
             </ContainerThree>
