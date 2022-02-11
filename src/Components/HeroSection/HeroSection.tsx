@@ -1,5 +1,5 @@
 import React from "react";
-// import Slideshow from "./Slideshow";
+import Slideshow from "./Slideshow";
 import styled, { keyframes } from "styled-components";
 import { BsArrowDownCircle } from 'react-icons/bs';
 
@@ -8,21 +8,6 @@ const PrimaryContainer = styled.div`
     flex-direction: column;
     margin-left: 7.8em;
     margin-right: 7.8em;
-`
-
-/* First Container responsible for spinning words */
-const ContainerOne = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 40px 0px;
-    margin-bottom: 20px;
-`
-
-const DevWord = styled.div`
-    color: hsl(155, 70%, 49%);
-    font-size: 45px;
-    font-weight: bold;
 `
 
 /* Second Container responsible for slogan and GIFS */
@@ -100,10 +85,7 @@ const ButtonBox = styled.div`
 const HeroSection = () => {
     return(
         <PrimaryContainer>
-            <ContainerOne>
-                <DevWord>Front-End Developer</DevWord>
-                {/* <Slideshow /> */}
-            </ContainerOne>
+            <Slideshow />
             <ContainerTwo>
                 <SloganBox>
                     <Text>From making music to building web applications, I love letting my <strong style={{color: 'hsl(360, 50%, 60%)'}}>creativity</strong> go wild!</Text>
