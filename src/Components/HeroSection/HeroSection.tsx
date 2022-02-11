@@ -3,7 +3,7 @@ import Slideshow from "./Slideshow";
 import styled, { keyframes } from "styled-components";
 import { BsArrowDownCircle } from 'react-icons/bs';
 
-const PrimaryContainer = styled.div`
+export const PrimaryContainer = styled.div`
     display: flex;
     flex-direction: column;
     margin-left: 7.8em;
@@ -96,7 +96,7 @@ const HeroSection = () => {
             </ContainerTwo>
             <ContainerThree>
                 <NextSection>
-                    <Text style={{fontSize: '35px'}}>Projects</Text>
+                    <Text style={{fontSize: '35px', height: '40px'}}>Projects</Text>
                     <ButtonBox >
                         <BsArrowDownCircle style={{color: 'white', width: '36px', height: '36px', cursor: 'pointer'}} />
                     </ButtonBox>
