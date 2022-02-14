@@ -6,8 +6,8 @@ const NavBarContainer = styled.div`
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    background: rgba(0, 0, 0, 0.25);
-    border-bottom: solid 1px rgba(255, 255, 255, 0.3);
+    /* background: rgba(0, 0, 0, 0.25);
+    border-bottom: solid 1px rgba(255, 255, 255, 0.3); */
 `
 
 const Name = styled.h3`

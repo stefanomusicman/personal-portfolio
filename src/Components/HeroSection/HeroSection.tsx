@@ -2,6 +2,7 @@ import React from "react";
 import Slideshow from "./Slideshow";
 import styled, { keyframes } from "styled-components";
 import { BsArrowDownCircle } from 'react-icons/bs';
+import Phone from "./Phone";
 
 export const PrimaryContainer = styled.div`
     display: flex;
@@ -31,7 +32,7 @@ const Text = styled.p`
 
 const GifBox = styled.div`
     display: flex;
-    justify-content: end;
+    justify-content: center;
     align-items: center;
     width: 50%;
 `
@@ -76,7 +77,7 @@ const bounce = keyframes`
 const ButtonBox = styled.div`
     display: flex;
     justify-content: center;
-    align-items: center
+    align-items: center;
     width: 50px;
     height: 50%;
     animation: ${bounce} 0.9s infinite
@@ -91,7 +92,8 @@ const HeroSection = () => {
                     <Text>From making music to building web applications, I love letting my <strong style={{color: 'hsl(360, 50%, 60%)'}}>creativity</strong> go wild!</Text>
                 </SloganBox>
                 <GifBox>
-                    <img src={require("./../../Images/iphone.gif")} alt="search" style={{width: '600px', height: '450px', borderRadius: '20px'}}/>
+                    {/* <img src={require("./../../Images/iphone.gif")} alt="search" style={{width: '600px', height: '450px', borderRadius: '20px'}}/> */}
+                    <Phone />
                 </GifBox>
             </ContainerTwo>
             <ContainerThree>

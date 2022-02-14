@@ -12,7 +12,7 @@ const PrimaryContainer = styled.div`
     margin: 0 auto;
     overflow: hidden;
     max-width: 500px;
-    padding-top: 4em;
+    /* padding-top: 4em; */
 `
 
 const SlideShowSlider = styled.div`
