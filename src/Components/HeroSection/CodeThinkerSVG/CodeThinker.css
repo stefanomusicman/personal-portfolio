@@ -1,0 +1,169 @@
+#rect1, #rect2, #rect3 {
+    animation: rectangle 2s linear infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes rectangle {
+    from {
+        transform: rotateZ(0deg);
+
+    }
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+#circle1 {
+    animation: circleOne 3s infinite;
+}
+
+@keyframes circleOne {
+    10% {
+        height: 35px;
+        width: 35px;
+    }
+    30% {
+        height: 35px;
+        width: 35px;
+    }
+    50% {
+        height: 35px;
+        width: 35px;
+        transform: translateY(-100px);
+    }
+    75% {
+        height: 35px;
+        width: 35px;
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+#circle2 {
+    animation: circleTwo 4s infinite;
+}
+
+@keyframes circleTwo {
+    10% {
+        height: 35px;
+        width: 35px;
+    }
+    30% {
+        height: 35px;
+        width: 35px;
+    }
+    50% {
+        height: 35px;
+        width: 35px;
+        transform: translateX(140px);
+    }
+    75% {
+        height: 35px;
+        width: 35px;
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+#leftArm {
+    animation: leftArm 1s infinite linear;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes leftArm {
+    10% {
+        transform: rotateZ(0deg);
+    }
+    30% {
+        transform: rotateZ(10deg);
+    }
+    50% {
+        transform: rotateZ(20deg);
+    }
+    75% {
+        transform: rotateZ(10deg);
+    }
+    100% {
+        transform: rotateZ(0deg);
+    }
+}
+
+#rightArm {
+    animation: rightArm 2s infinite linear;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes rightArm {
+    10% {
+        transform: rotateZ(0deg);
+    }
+    30% {
+        transform: rotateZ(-10deg);
+    }
+    50% {
+        transform: rotateZ(-20deg);
+    }
+    75% {
+        transform: rotateZ(-10deg);
+    }
+    100% {
+        transform: rotateZ(0deg);
+    }
+}
+
+#leftFoot {
+    animation: leftFoot 2s infinite linear;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes leftFoot {
+    10% {
+        transform: rotateZ(0deg);
+    }
+    30% {
+        transform: rotateZ(-10deg);
+    }
+    50% {
+        transform: rotateZ(-20deg);
+    }
+    75% {
+        transform: rotateZ(-10deg);
+    }
+    100% {
+        transform: rotateZ(0deg);
+    }
+}
+
+#TextOnScreen {
+    animation: TextOnScreen 3s infinite;
+}
+
+@keyframes TextOnScreen {
+    10% {
+        height: 35px;
+        width: 35px;
+    }
+    30% {
+        height: 35px;
+        width: 35px;
+    }
+    50% {
+        height: 35px;
+        width: 35px;
+        transform: translateY(40px);
+    }
+    75% {
+        height: 35px;
+        width: 35px;
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+

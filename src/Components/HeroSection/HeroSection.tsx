@@ -2,7 +2,8 @@ import React from "react";
 import Slideshow from "./Slideshow";
 import styled, { keyframes } from "styled-components";
 import { BsArrowDownCircle } from 'react-icons/bs';
-import Phone from "./Phone";
+import CodeThinker from "./CodeThinkerSVG/CodeThinker";
+// import Phone from "./PhoneSVG/Phone";
 
 export const PrimaryContainer = styled.div`
     display: flex;
@@ -15,7 +16,8 @@ export const PrimaryContainer = styled.div`
 const ContainerTwo = styled.div`
     display: flex;
     width: 100%;
-    margin-bottom: 20px;
+    height: 55vh;
+    /* margin-bottom: 20px; */
 `
 
 const SloganBox = styled.div`
@@ -93,7 +95,8 @@ const HeroSection = () => {
                 </SloganBox>
                 <GifBox>
                     {/* <img src={require("./../../Images/iphone.gif")} alt="search" style={{width: '600px', height: '450px', borderRadius: '20px'}}/> */}
-                    <Phone />
+                    {/* <Phone /> */}
+                    <CodeThinker />
                 </GifBox>
             </ContainerTwo>
             <ContainerThree>

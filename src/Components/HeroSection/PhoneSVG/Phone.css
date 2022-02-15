@@ -16,7 +16,7 @@
 
   #bolt g {
     opacity: 0;
-    animation: dropIn 8s;
+    animation: dropIn 5s;
     animation-timing-function: ease;
     animation-fill-mode: forwards;
     animation-delay: calc(var(--order) * 200ms);
