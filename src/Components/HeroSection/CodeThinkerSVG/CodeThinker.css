@@ -1,4 +1,4 @@
-#rect1, #rect2, #rect3 {
+#rect1, #rect2, #rect3, #rect4 {
     animation: rectangle 2s linear infinite;
     transform-origin: center;
     transform-box: fill-box;

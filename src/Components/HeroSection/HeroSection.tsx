@@ -34,7 +34,7 @@ const Text = styled.p`
 
 const GifBox = styled.div`
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
     width: 50%;
 `
