@@ -1,8 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
 import Macbook from "./Macbook";
-import { BsArrowLeftCircle } from 'react-icons/bs';
-import { BsArrowRightCircle } from 'react-icons/bs';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import { Navigation, Pagination } from "swiper";
+// import { BsArrowLeftCircle } from 'react-icons/bs';
+// import { BsArrowRightCircle } from 'react-icons/bs';
 
 type Info = {
     name: string,
@@ -51,39 +56,41 @@ const Title = styled.p`
     font-weight: bold;
 `
 
-const ProjectsContainer = styled.div`
+const Carousel = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
+
+    /* margin: 0 auto;
+    overflow: hidden;
+    max-width: 1000px;
+    position: relative; */
+    height: 85vh;
 `
 
 const Projects = () => {
-
-    const [current, setCurrent] = useState(0);
-
-    const nextSlide = () => {
-        setCurrent(current === projectInfo.length - 1 ? 0 : current + 1)
-    }
-
-    const prevSlide = () => {
-        setCurrent(current === 0 ? projectInfo.length - 1 : current - 1)
-    }
 
     return(
         <PrimaryContainer style={{marginTop: '30px'}}>
             <TitleContainer>
                 <Title>Projects</Title>
             </TitleContainer>
-            <ProjectsContainer>
-                <BsArrowLeftCircle onClick={prevSlide} style={{color: 'white', width: '36px', height: '36px', cursor: 'pointer'}}/>
-                <div>
-                    {projectInfo.map((item) => {
-                        return <Macbook key={item.id}/>
-                    })}
-                </div>
-                <BsArrowRightCircle onClick={nextSlide} style={{color: 'white', width: '36px', height: '36px', cursor: 'pointer'}}/>
-            </ProjectsContainer>
+            <Carousel>
+                {/* <BsArrowLeftCircle onClick={prevSlide} style={{color: 'white', width: '36px', height: '36px', cursor: 'pointer', position: 'absolute'}}/> */}
+                    {/* {projectInfo.map((item) => <Macbook key={item.id}/>)} */}
+                {/* <BsArrowRightCircle onClick={nextSlide} style={{color: 'white', width: '36px', height: '36px', cursor: 'pointer', position: 'absolute'}}/> */}
+                <Swiper 
+                    slidesPerView={1}
+                    spaceBetween={30}
+                    loop={true}
+                    navigation={true}
+                    modules={[Navigation]}
+                    className='mySwiper'
+                >
+                    {projectInfo.map((item) => <SwiperSlide> <Macbook key={item.id}/> </SwiperSlide>)}
+                </Swiper>
+            </Carousel>
         </PrimaryContainer>
     )
 }
