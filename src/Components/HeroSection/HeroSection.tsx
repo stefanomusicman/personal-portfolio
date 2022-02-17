@@ -55,21 +55,25 @@ const NextSection = styled.div`
 
 const bounce = keyframes`
     10% {
-        height: 35px;
-        width: 35px;
+        /* height: 35px;
+        width: 35px; */
+        transform: translateY(5px);
     }
     30% {
-        height: 35px;
-        width: 35px;
+        /* height: 35px;
+        width: 35px; */
+        transform: translateY(12px);
+
     }
     50% {
-        height: 35px;
-        width: 35px;
+        /* height: 35px;
+        width: 35px; */
         transform: translateY(20px);
     }
     75% {
-        height: 35px;
-        width: 35px;
+        /* height: 35px;
+        width: 35px; */
+        transform: translateY(12px);
     }
     100% {
         transform: translateY(0px);
@@ -82,7 +86,7 @@ const ButtonBox = styled.div`
     align-items: center;
     width: 50px;
     height: 50%;
-    animation: ${bounce} 0.9s infinite
+    animation: ${bounce} 0.9s infinite linear;
 `
 
 const HeroSection = () => {
@@ -103,7 +107,7 @@ const HeroSection = () => {
                 <NextSection>
                     <Text style={{fontSize: '35px', height: '40px'}}>Projects</Text>
                     <ButtonBox >
-                        <BsArrowDownCircle style={{color: 'white', width: '36px', height: '36px', cursor: 'pointer'}} />
+                        <BsArrowDownCircle style={{color: 'white', width: '36px', height: '36px'}} />
                     </ButtonBox>
                 </NextSection>
             </ContainerThree>
