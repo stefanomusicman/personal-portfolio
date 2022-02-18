@@ -25,8 +25,10 @@ const Title = styled.h3`
 const Tech = styled.div`
     color: white;
     margin-bottom: 3em;
+    width: 700px;
     position: absolute;
     font-size: 30px;
+    text-align: center;
 `
 
 const ButtonContainer = styled.div`
@@ -53,12 +55,12 @@ const Button = styled.button`
     }
 `
 
-const Macbook = () => {
+const Macbook: React.FC<{name: string, tech: string}> = (props) => {
     return(
         <LaptopContainer>
             <Laptop src={require("./../../Images/MacBook2.png")} alt="macbook" style={{width: '1000px', height: '600px', position: 'relative'}}/>
-            <Title>Title</Title>
-            <Tech>Tech Used: React</Tech>
+            <Title>{props.name}</Title>
+            <Tech>Tech Used: {props.tech}</Tech>
             <ButtonContainer>
                 <Button>Demo</Button>
                 <Button style={{marginLeft: '40px'}}>{`Code </>`}</Button>
