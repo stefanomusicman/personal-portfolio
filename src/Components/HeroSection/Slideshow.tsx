@@ -15,6 +15,8 @@ const PrimaryContainer = styled.div`
     /* padding-top: 4em; */
 `
 
+
+
 const SlideShowSlider = styled.div`
     white-space: nowrap;
     transition: ease 1500ms;
@@ -28,6 +30,7 @@ const Slide = styled.div`
     text-align: center;
     font-size: 45px;
     font-weight: bold;
+    user-select: none;
 `
 
 type Description = {

@@ -40,6 +40,9 @@ const projectInfo: Info[] = [
 const PrimaryContainer = styled.div`
     display: flex;
     flex-direction: column;
+    width: 80%;
+    justify-content: center;
+    margin: auto;
 `
 
 const TitleContainer = styled.div`
@@ -54,6 +57,8 @@ const Title = styled.p`
     color: white;
     font-weight: bold;
 `
+
+
 
 const Carousel = styled.div`
     display: flex;
@@ -126,9 +131,6 @@ const Projects = () => {
                 <Title>Projects</Title>
             </TitleContainer>
             <Carousel>
-                {/* <BsArrowLeftCircle onClick={prevSlide} style={{color: 'white', width: '36px', height: '36px', cursor: 'pointer', position: 'absolute'}}/> */}
-                    {/* {projectInfo.map((item) => <Macbook key={item.id}/>)} */}
-                {/* <BsArrowRightCircle onClick={nextSlide} style={{color: 'white', width: '36px', height: '36px', cursor: 'pointer', position: 'absolute'}}/> */}
                 <Swiper 
                     slidesPerView={1}
                     spaceBetween={30}
