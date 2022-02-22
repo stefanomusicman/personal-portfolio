@@ -45,14 +45,14 @@ const PrimaryContainer = styled.div`
     margin: auto;
 `
 
-const TitleContainer = styled.div`
+export const TitleContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
 `
 
-const Title = styled.p`
+export const Title = styled.p`
     font-size: 45px;
     color: white;
     font-weight: bold;

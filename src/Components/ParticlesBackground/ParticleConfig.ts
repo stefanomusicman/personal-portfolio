@@ -54,7 +54,7 @@ const ParticlesConfig: any = {
       },
       move: {
         enable: true,
-        speed: 3,
+        speed: 2,
         direction: "none",
         random: true,
         straight: false,
@@ -68,7 +68,7 @@ const ParticlesConfig: any = {
       }
     },
     interactivity: {
-      detect_on: "canvas",
+      detect_on: "window",
       events: {
         onhover: {
           enable: true,

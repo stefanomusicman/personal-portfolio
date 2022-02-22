@@ -13,7 +13,7 @@ export const PrimaryContainer = styled.div`
 `
 
 /* Second Container responsible for slogan and GIFS */
-const ContainerTwo = styled.div`
+export const ContainerTwo = styled.div`
     display: flex;
     width: 100%;
     height: 55vh;
@@ -98,8 +98,6 @@ const HeroSection = () => {
                     <Text>From making music to building web applications, I love letting my <strong style={{color: 'hsl(360, 50%, 60%)'}}>creativity</strong> go wild!</Text>
                 </SloganBox>
                 <GifBox>
-                    {/* <img src={require("./../../Images/iphone.gif")} alt="search" style={{width: '600px', height: '450px', borderRadius: '20px'}}/> */}
-                    {/* <Phone /> */}
                     <CodeThinker />
                 </GifBox>
             </ContainerTwo>
