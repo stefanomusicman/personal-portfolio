@@ -53,7 +53,7 @@ const NextSection = styled.div`
     align-items: center;
 `
 
-const bounce = keyframes`
+export const bounce = keyframes`
     10% {
         /* height: 35px;
         width: 35px; */
