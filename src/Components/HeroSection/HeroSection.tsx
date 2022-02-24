@@ -95,7 +95,7 @@ const HeroSection = () => {
             <Slideshow />
             <ContainerTwo>
                 <SloganBox>
-                    <Text>From making music to building web applications, I love letting my <strong style={{color: 'hsl(360, 50%, 60%)'}}>creativity</strong> go wild!</Text>
+                    <Text>From making music to building web applications, I love letting my <strong style={{color: '#c04343'}}>creativity</strong> go wild!</Text>
                 </SloganBox>
                 <GifBox>
                     <CodeThinker />

@@ -2,7 +2,7 @@ import React from "react";
 import styled, { keyframes } from "styled-components";
 import { ImGithub } from 'react-icons/im';
 import { BsLinkedin } from 'react-icons/bs';
-import { IoIosDocument } from 'react-icons/io';
+import { CgFileDocument } from 'react-icons/cg';
 
 const IconsContainer = styled.div`
     display: flex;
@@ -55,7 +55,7 @@ const IconsBar = () => {
         <IconsContainer>
             <Anchor href="https://github.com/stefanomusicman" target='_blank' rel="noopener noreferrer"><ImGithub style={{width: '40px', height: '40px', padding: '10px', color: 'white'}}/></Anchor>
             <Anchor><BsLinkedin style={{width: '40px', height: '40px', padding: '10px', color: 'white'}}/></Anchor>
-            <Anchor><IoIosDocument style={{width: '40px', height: '40px', padding: '10px', color: 'white'}}/></Anchor>
+            <Anchor><CgFileDocument style={{width: '40px', height: '40px', padding: '10px', color: 'white'}}/></Anchor>
         </IconsContainer>
     )   
 }

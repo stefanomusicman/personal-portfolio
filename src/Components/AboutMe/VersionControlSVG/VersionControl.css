@@ -1,0 +1,273 @@
+/* Head Animation */
+@keyframes headHover {
+    10% {
+        transform: translateY(3px);
+    }
+    30% {
+        transform: translateY(4px);
+    }
+    50% {
+        transform: translateY(6px);
+    }
+    75% {
+        transform: translateY(4px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+#head {
+    animation: headHover 1s infinite linear;
+}
+
+/* Coffee Mug Animations */
+
+#coffeeMug {
+    animation: coffee 2s infinite linear;
+}
+
+@keyframes coffee {
+    50% {
+        transform: translateX(-20px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+ 
+/* Arm Animations */
+
+#RightArm {
+    animation: RightArm 1s infinite linear;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes RightArm {
+    10% {
+        transform: rotateZ(0deg);
+    }
+    30% {
+        transform: rotateZ(2deg);
+    }
+    50% {
+        transform: rotateZ(4deg);
+    }
+    75% {
+        transform: rotateZ(2deg);
+    }
+    100% {
+        transform: rotateZ(0deg);
+    }
+
+}
+
+#LeftArm {
+    animation: LeftArm 1s infinite linear;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes LeftArm {
+    10% {
+        transform: rotateZ(0deg);
+    }
+    30% {
+        transform: rotateZ(-2deg);
+    }
+    50% {
+        transform: rotateZ(-5deg);
+    }
+    75% {
+        transform: rotateZ(-2deg);
+    }
+    100% {
+        transform: rotateZ(0deg);
+    }
+
+}
+
+/* Three Rectangles */
+
+#rectOne {
+    animation: colorChange 5s infinite linear;
+}
+
+@keyframes colorChange {
+    10% {
+        fill: aqua;
+    }
+    30% {
+        fill: aquamarine;
+    }
+    50% {
+        fill: rgb(67, 67, 151);
+    }
+    75% {
+        fill: aquamarine;
+    }
+    100% {
+        fill: #B01C2D;
+    }
+}
+
+#rectTwo {
+    animation: ColorChange 4s infinite linear;
+}
+
+@keyframes ColorChange {
+    10% {
+        fill: rgb(47, 161, 98);
+    }
+    30% {
+        fill: rgb(111, 145, 49);
+    }
+    50% {
+        fill: rgb(17, 71, 122);
+    }
+    75% {
+        fill: rgb(111, 145, 49);
+    }
+    100% {
+        fill: #CCCCCC;
+    }
+}
+
+#rectThree {
+    animation: colorshift 3s infinite linear;
+}
+
+@keyframes colorshift {
+    10% {
+        fill: rgb(167, 129, 27);
+    }
+    30% {
+        fill: rgb(173, 66, 39);
+    }
+    50% {
+        fill: rgb(16, 209, 177);
+    }
+    75% {
+        fill: rgb(15, 86, 114);
+    }
+    100% {
+        fill: #3F3D56;
+    }
+}
+
+/* Circles Animations */
+
+#circleOne {
+    animation: circleone 2s infinite linear;
+}
+
+@keyframes circleone {
+    50% {
+        transform: translateX(17px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+#circletwo, #circleSeven {
+    animation: circletwo 2s infinite linear;
+}
+
+@keyframes circletwo {
+    50% {
+        transform: translateX(-17px);
+        fill: aqua;
+    }
+    75% {
+        fill: azure;
+    }
+    100% {
+        transform: translateX(0px);
+        fill: aquamarine;
+    }
+}
+
+#circleThree {
+    animation: circleThree 2s infinite linear;
+}
+
+@keyframes circleThree {
+    50% {
+        transform: translateX(-30px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+#circleFour {
+    animation: circleFour 2s infinite linear;
+}
+
+@keyframes circleFour {
+    50% {
+        transform: translateX(-40px);
+        fill: aqua;
+    }
+    75% {
+        fill: rgb(27, 141, 141);
+    }
+    100% {
+        transform: translateX(0px);
+        fill: aquamarine;
+    }
+}
+
+#circleFive {
+    animation: circleFive 2s infinite linear;
+}
+
+@keyframes circleFive {
+    50% {
+        transform: translateX(30px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+#circleSix {
+    animation: circleSix 4s infinite linear;
+}
+
+@keyframes circleSix {
+    50% {
+        transform: translateX(60px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+#circleEight {
+    animation: circleEight 2s infinite linear;
+}
+
+@keyframes circleEight {
+    50% {
+        transform: translateY(30px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+#circleNine {
+    animation: circleNine 2s infinite linear;
+}
+
+@keyframes circleNine {
+    50% {
+        transform: translateX(-17px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}

@@ -56,6 +56,7 @@ export const Title = styled.p`
     font-size: 45px;
     color: white;
     font-weight: bold;
+    font-family: 'Asap';
 `
 
 

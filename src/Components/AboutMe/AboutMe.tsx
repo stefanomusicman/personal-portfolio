@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import VersionControl from "./VersionControlSVG/VersionControl";
 import { PrimaryContainer } from "../HeroSection/HeroSection";
 import { TitleContainer } from "../Projects/Projects";
 import { Title } from "../Projects/Projects";
@@ -17,6 +18,7 @@ const AnimationContainer = styled.div`
     justify-content: center;
     align-items: center;
     width: 50%;
+    height: 100%;
 `
 
 const InfoContainer = styled.div`
@@ -75,7 +77,7 @@ const AboutMe = () => {
             </TitleContainer>
             <ContainerTwo>
                 <AnimationContainer>
-
+                    <VersionControl />
                 </AnimationContainer>
                 <InfoContainer>
                     <InfoBox>
