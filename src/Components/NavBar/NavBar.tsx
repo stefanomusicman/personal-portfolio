@@ -55,7 +55,7 @@ const IconsBox = styled.div`
 
 const NavBar = () => {
     return(
-        <NavBarContainer>
+        <NavBarContainer id="nav">
             <NameContainer>
                 <Name>Stefano Proietti</Name>
             </NameContainer>

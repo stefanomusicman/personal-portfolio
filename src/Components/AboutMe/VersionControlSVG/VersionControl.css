@@ -203,7 +203,7 @@
 }
 
 #circleFour {
-    animation: circleFour 2s infinite linear;
+    animation: circleFour 1.5s infinite linear;
 }
 
 @keyframes circleFour {
@@ -221,7 +221,7 @@
 }
 
 #circleFive {
-    animation: circleFive 2s infinite linear;
+    animation: circleFive 1.6s infinite linear;
 }
 
 @keyframes circleFive {

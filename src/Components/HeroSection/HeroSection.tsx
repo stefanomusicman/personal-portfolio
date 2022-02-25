@@ -4,7 +4,6 @@ import styled, { keyframes } from "styled-components";
 import { BsArrowDownCircle } from 'react-icons/bs';
 import CodeThinker from "./CodeThinkerSVG/CodeThinker";
 import { Link } from 'react-scroll'
-import NavBar from "../NavBar/NavBar";
 
 export const PrimaryContainer = styled.div`
     display: flex;
