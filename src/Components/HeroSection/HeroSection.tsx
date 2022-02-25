@@ -3,7 +3,8 @@ import Slideshow from "./Slideshow";
 import styled, { keyframes } from "styled-components";
 import { BsArrowDownCircle } from 'react-icons/bs';
 import CodeThinker from "./CodeThinkerSVG/CodeThinker";
-// import Phone from "./PhoneSVG/Phone";
+import { Link } from 'react-scroll'
+import NavBar from "../NavBar/NavBar";
 
 export const PrimaryContainer = styled.div`
     display: flex;
@@ -87,6 +88,7 @@ const ButtonBox = styled.div`
     width: 50px;
     height: 50%;
     animation: ${bounce} 0.9s infinite linear;
+    cursor: pointer;
 `
 
 const HeroSection = () => {
@@ -105,7 +107,7 @@ const HeroSection = () => {
                 <NextSection>
                     <Text style={{fontSize: '35px', height: '40px'}}>Projects</Text>
                     <ButtonBox >
-                        <BsArrowDownCircle style={{color: 'white', width: '36px', height: '36px'}} />
+                        <Link to="projects" spy={true} smooth={true}><BsArrowDownCircle style={{color: 'white', width: '36px', height: '36px'}} /></Link>
                     </ButtonBox>
                 </NextSection>
             </ContainerThree>

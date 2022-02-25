@@ -7,6 +7,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { Navigation } from "swiper";
 import { BsArrowDownCircle } from 'react-icons/bs';
+import { Link } from 'react-scroll';
 
 type Info = {
     name: string,
@@ -71,7 +72,7 @@ const Carousel = styled.div`
     overflow: hidden;
     max-width: 1000px;
     position: relative; */
-    height: 68vh;
+    height: 65vh;
 `
 
 const NextSection = styled.div`
@@ -122,12 +123,13 @@ const ButtonBox = styled.div`
     height: 50%;
     margin-bottom: 40px;
     animation: ${bounce} 0.9s infinite linear;
+    cursor: pointer;
 `
 
 const Projects = () => {
 
     return(
-        <PrimaryContainer style={{marginTop: '30px'}}>
+        <PrimaryContainer id="projects" style={{marginTop: '30px'}}>
             <TitleContainer>
                 <Title>Projects</Title>
             </TitleContainer>
@@ -146,7 +148,7 @@ const Projects = () => {
             <NextSection>
                 <Text style={{fontSize: '35px', height: '40px'}}>About Me</Text>
                 <ButtonBox>
-                    <BsArrowDownCircle style={{color: 'white', width: '36px', height: '36px'}} />
+                    <Link to="about me" spy={true} smooth={true}><BsArrowDownCircle style={{color: 'white', width: '36px', height: '36px'}} /></Link>
                 </ButtonBox>
             </NextSection>
         </PrimaryContainer>

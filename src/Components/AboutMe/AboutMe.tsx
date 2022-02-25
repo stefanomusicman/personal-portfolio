@@ -71,7 +71,7 @@ const FooterMessage = styled.p`
 
 const AboutMe = () => {
     return(
-        <PrimaryContainer >
+        <PrimaryContainer id="about me">
             <TitleContainer>
                 <Title>About Me</Title>
             </TitleContainer>
