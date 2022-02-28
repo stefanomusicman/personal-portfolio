@@ -33,12 +33,15 @@ const InfoContainer = styled.div`
 const InfoBox = styled.div`
     display: flex;
     flex-direction: column;
-    width: 90%;
-    height: 80%;
+    width: 75%;
+    height: 70%;
     justify-content: space-around;
-    background-color: #287AA9;
+    /* background-color: background-color: #0093E9; */
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #129a8a 100%);
     border: none;
     border-radius: 10px;
+    padding: 30px;
 `
 
 const TextBox = styled.div`

@@ -61,9 +61,9 @@ const NavBar = () => {
             </NameContainer>
             {/* <ContactButton>Contact Me</ContactButton> */}
             <IconsBox>
-                <IoMusicalNotes style={{color: 'white', height: '40px', width: '40px', order: '1'}}/>
-                <FaCoffee style={{color: 'white', height: '40px', width: '40px', order: '2'}}/>
-                <HiCode style={{color: 'white', height: '40px', width: '40px', order: '3'}}/>
+                <IoMusicalNotes style={{color: 'white', height: '35px', width: '35px', order: '1'}}/>
+                <FaCoffee style={{color: 'white', height: '35px', width: '35px', order: '2'}}/>
+                <HiCode style={{color: 'white', height: '35px', width: '35px', order: '3'}}/>
             </IconsBox>
         </NavBarContainer>
     )

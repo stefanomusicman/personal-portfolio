@@ -142,7 +142,7 @@ const Projects = () => {
                     modules={[Navigation]}
                     className='mySwiper'
                 >
-                    {projectInfo.map((item) => <SwiperSlide> <Macbook name={item.name} tech={item.techUsed} key={item.id}/> </SwiperSlide>)}
+                    {projectInfo.map((item) => <SwiperSlide key={item.id}> <Macbook name={item.name} tech={item.techUsed} key={item.id}/> </SwiperSlide>)}
                 </Swiper>
             </Carousel>
             <NextSection>
