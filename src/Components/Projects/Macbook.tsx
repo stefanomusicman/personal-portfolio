@@ -41,21 +41,19 @@ const ButtonContainer = styled.div`
     margin-top: 12em;
 `
 
-const Button = styled.button`
+const Button = styled.a`
     background-color: hsl(28, 72%, 66%);
+    text-align: center;
+    text-decoration: none;
     color: white;
     border: none;
     border-radius: 10px;
     padding: 10px 15px;
     width: 10em;
     font-size: 20px;
-
-    &:hover {
-        cursor: pointer;
-    }
 `
 
-const Macbook: React.FC<{name: string, tech: string}> = (props) => {
+const Macbook: React.FC<{code: string, name: string, tech: string}> = (props) => {
     return(
         <LaptopContainer>
             <Laptop src={require("./../../Images/MacBook2.png")} alt="macbook" style={{width: '1000px', height: '600px', position: 'relative'}}/>
@@ -63,7 +61,7 @@ const Macbook: React.FC<{name: string, tech: string}> = (props) => {
             <Tech>Tech Used: {props.tech}</Tech>
             <ButtonContainer>
                 <Button>Demo</Button>
-                <Button style={{marginLeft: '40px'}}>{`Code </>`}</Button>
+                <Button href={props.code} target='_blank' style={{marginLeft: '40px'}}>{`Code </>`}</Button>
             </ButtonContainer>
         </LaptopContainer>
     )

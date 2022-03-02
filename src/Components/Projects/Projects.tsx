@@ -44,6 +44,7 @@ const PrimaryContainer = styled.div`
     width: 80%;
     justify-content: center;
     margin: auto;
+    position: relative;
 `
 
 export const TitleContainer = styled.div`
@@ -67,11 +68,6 @@ const Carousel = styled.div`
     justify-content: center;
     align-items: center;
     width: 100%;
-
-    /* margin: 0 auto;
-    overflow: hidden;
-    max-width: 1000px;
-    position: relative; */
     height: 65vh;
 `
 
@@ -90,24 +86,16 @@ const Text = styled.p`
 
 const bounce = keyframes`
     10% {
-        /* height: 35px;
-        width: 35px; */
         transform: translateY(5px);
     }
     30% {
-        /* height: 35px;
-        width: 35px; */
         transform: translateY(12px);
 
     }
     50% {
-        /* height: 35px;
-        width: 35px; */
         transform: translateY(20px);
     }
     75% {
-        /* height: 35px;
-        width: 35px; */
         transform: translateY(12px);
     }
     100% {
@@ -142,7 +130,7 @@ const Projects = () => {
                     modules={[Navigation]}
                     className='mySwiper'
                 >
-                    {projectInfo.map((item) => <SwiperSlide key={item.id}> <Macbook name={item.name} tech={item.techUsed} key={item.id}/> </SwiperSlide>)}
+                    {projectInfo.map((item) => <SwiperSlide key={item.id}> <Macbook code={item.sourceCodeLink} name={item.name} tech={item.techUsed} key={item.id}/> </SwiperSlide>)}
                 </Swiper>
             </Carousel>
             <NextSection>

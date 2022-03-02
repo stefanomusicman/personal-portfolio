@@ -4,7 +4,7 @@ import ParticlesConfig from './ParticleConfig';
 
 const ParticlesBackground = () => {
     return(
-        <Particles params={ParticlesConfig}/>
+            <Particles params={ParticlesConfig}/>
     )
 }
 
