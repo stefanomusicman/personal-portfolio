@@ -28,6 +28,7 @@ const Name = styled.h3`
     font-family: 'Oswald';
 `
 
+
 const IconsBox = styled.div`
     display: flex;
     height: 100%;
@@ -36,22 +37,6 @@ const IconsBox = styled.div`
     align-items: center;
     /* animation: ${bounce} 0.9s infinite linear; */
 `
-
-// const ContactButton = styled.button`
-//     margin-right: 5em;
-//     font-size: 25px;
-//     font-weight: bold;
-//     font-family: 'Oswald';
-//     border-radius: 10px;
-//     padding: 5px 20px;
-//     border: none;
-
-//     &:hover {
-//         cursor: pointer;
-//         background-color: black;
-//         color: white;
-//     }
-// `
 
 const NavBar = () => {
     return(

@@ -1,9 +1,9 @@
 import React from "react";
-import Slideshow from "./Slideshow";
 import styled, { keyframes } from "styled-components";
 import { BsArrowDownCircle } from 'react-icons/bs';
 import CodeThinker from "./CodeThinkerSVG/CodeThinker";
 import { Link } from 'react-scroll'
+import SlideShowTwo from "./SlideShowV2/SlideShowTwo";
 
 export const PrimaryContainer = styled.div`
     display: flex;
@@ -16,8 +16,7 @@ export const PrimaryContainer = styled.div`
 export const ContainerTwo = styled.div`
     display: flex;
     width: 100%;
-    height: 55vh;
-    /* margin-bottom: 20px; */
+    height: 52vh; //originally 55vh
 `
 
 const SloganBox = styled.div`
@@ -55,24 +54,15 @@ const NextSection = styled.div`
 
 export const bounce = keyframes`
     10% {
-        /* height: 35px;
-        width: 35px; */
         transform: translateY(5px);
     }
     30% {
-        /* height: 35px;
-        width: 35px; */
         transform: translateY(12px);
-
     }
     50% {
-        /* height: 35px;
-        width: 35px; */
         transform: translateY(20px);
     }
     75% {
-        /* height: 35px;
-        width: 35px; */
         transform: translateY(12px);
     }
     100% {
@@ -93,7 +83,7 @@ const ButtonBox = styled.div`
 const HeroSection = () => {
     return(
         <PrimaryContainer>
-            <Slideshow />
+            <SlideShowTwo />
             <ContainerTwo>
                 <SloganBox>
                     <Text>From making music to building web applications, I love letting my <strong style={{color: '#c04343'}}>creativity</strong> go wild!</Text>
