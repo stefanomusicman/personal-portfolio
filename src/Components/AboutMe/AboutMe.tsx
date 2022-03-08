@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { bounce } from "../HeroSection/HeroSection";
 import VersionControl from "./VersionControlSVG/VersionControl";
 import { PrimaryContainer } from "../HeroSection/HeroSection";
@@ -30,18 +30,33 @@ const InfoContainer = styled.div`
     width: 50%;
 `
 
+const gradient = keyframes`
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+`
+
 const InfoBox = styled.div`
     display: flex;
     flex-direction: column;
     width: 75%;
     height: 70%;
     justify-content: space-around;
-    /* background-color: background-color: #0093E9; */
-    background-color: #0093E9;
-    background-image: linear-gradient(160deg, #0093E9 0%, #129a8a 100%);
+    /* background-color: #0093E9; */
+    /* background-image: linear-gradient(160deg, #0093E9 0%, #129a8a 100%); */
     border: none;
     border-radius: 10px;
     padding: 30px;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: ${gradient} 15s ease infinite;
+	/* height: 100vh; */
 `
 
 const TextBox = styled.div`
