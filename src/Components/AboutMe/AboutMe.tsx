@@ -48,6 +48,7 @@ const InfoBox = styled.div`
     width: 75%;
     height: 70%;
     justify-content: space-around;
+    box-shadow: 0 0 8px 3px #606060;
     /* background-color: #0093E9; */
     /* background-image: linear-gradient(160deg, #0093E9 0%, #129a8a 100%); */
     border: none;
@@ -55,7 +56,7 @@ const InfoBox = styled.div`
     padding: 30px;
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
 	background-size: 400% 400%;
-	animation: ${gradient} 15s ease infinite;
+	animation: ${gradient} 12s ease infinite;
 	/* height: 100vh; */
 `
 

@@ -20,6 +20,7 @@ const Title = styled.h3`
     margin-bottom: 10em;
     position: absolute;
     font-size: 40px;
+    font-family: 'Asap';
 `
 
 const Tech = styled.div`
@@ -29,6 +30,7 @@ const Tech = styled.div`
     position: absolute;
     font-size: 30px;
     text-align: center;
+    font-family: 'Asap';
 `
 
 const ButtonContainer = styled.div`

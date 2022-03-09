@@ -20,7 +20,7 @@ type Info = {
 const projectInfo: Info[] = [
     {
         name: 'Food Order App',
-        techUsed: 'React, CSS Modules',
+        techUsed: 'React, CSS Modules, React Router',
         sourceCodeLink: 'https://github.com/stefanomusicman/food-order-app',
         id: 1
     },
