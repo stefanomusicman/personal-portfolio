@@ -42,6 +42,24 @@ const gradient = keyframes`
 	}
 `
 
+const hover = keyframes`
+    0% {
+        transform: translateY(0px);
+    }
+    30% {
+        transform: translateY(5px);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    75% {
+        transform: translateY(5px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+`
+
 const InfoBox = styled.div`
     display: flex;
     flex-direction: column;
@@ -49,14 +67,12 @@ const InfoBox = styled.div`
     height: 70%;
     justify-content: space-around;
     box-shadow: 0 0 8px 3px #606060;
-    /* background-color: #0093E9; */
-    /* background-image: linear-gradient(160deg, #0093E9 0%, #129a8a 100%); */
     border: none;
     border-radius: 10px;
     padding: 30px;
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
 	background-size: 400% 400%;
-	animation: ${gradient} 12s ease infinite;
+	animation: ${gradient} 10s ease infinite, ${hover} 3s infinite linear;
 	/* height: 100vh; */
 `
 
