@@ -10,6 +10,11 @@ export const PrimaryContainer = styled.div`
     flex-direction: column;
     margin-left: 7.8em;
     margin-right: 7.8em;
+
+    @media (max-width: 700px) {
+        margin-left: 0;
+        margin-right: 0;
+    }
 `
 
 /* Second Container responsible for slogan and GIFS */
@@ -17,18 +22,34 @@ export const ContainerTwo = styled.div`
     display: flex;
     width: 100%;
     height: 52vh; //originally 55vh
+
+    @media (max-width: 700px) {
+        flex-direction: column;
+        height: auto;
+    }
 `
 
 const SloganBox = styled.div`
     display: flex;
     align-items: center;
     width: 50%;
+
+    @media (max-width: 700px) {
+        justify-content: center;
+        width: 90%;
+        padding: 20px;
+        height: auto;
+    }
 `
 
 const Text = styled.p`
     color: white;
     font-size: 60px;
     font-family: 'Oswald';
+
+    @media (max-width: 700px) {
+        font-size: 25px;
+    }
 `
 
 const GifBox = styled.div`
@@ -36,6 +57,12 @@ const GifBox = styled.div`
     justify-content: end;
     align-items: center;
     width: 50%;
+
+    @media (max-width: 700px) {
+        width: 100%;
+        height: 12em;
+        justify-content: center;
+    }
 `
 
 /* Third Container for button and link icons */

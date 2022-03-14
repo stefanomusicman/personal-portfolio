@@ -9,6 +9,7 @@
     float: left;
     margin-right: 0.5em;
   }
+
   .Iam b {
     float: left;
     overflow: hidden;
@@ -80,3 +81,9 @@
       60% { top: -150px; }
       80% { top: -200px; }
   }
+
+@media (max-width: 700px) {
+  .Iam {
+    display: none;
+  }
+} 

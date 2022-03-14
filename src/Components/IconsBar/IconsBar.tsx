@@ -13,6 +13,10 @@ const IconsContainer = styled.div`
     align-items: center;
     position: fixed;
     right: 0px; bottom: 0px;
+
+    @media (max-width: 700px) {
+        display: none;
+    }
 `
 
 const wiggle = keyframes`
