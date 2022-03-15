@@ -45,6 +45,10 @@ const PrimaryContainer = styled.div`
     justify-content: center;
     margin: auto;
     position: relative;
+
+    @media (max-width: 700px) {
+        width: 100%;
+    }
 `
 
 export const TitleContainer = styled.div`
@@ -69,6 +73,10 @@ const Carousel = styled.div`
     align-items: center;
     width: 100%;
     height: 65vh;
+
+    @media (max-width: 700px) {
+        height: 50vh;
+    }
 `
 
 const NextSection = styled.div`

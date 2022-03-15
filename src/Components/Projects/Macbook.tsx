@@ -12,7 +12,12 @@ const LaptopContainer = styled.div`
 const Laptop = styled.img`
     width: 1000px;
     height: 600px;
-    position: relative
+    position: relative;
+
+    @media (max-width: 700px) {
+        width: 500px;
+        height: 300px;
+    }
 `
 
 const Title = styled.h3`
@@ -21,6 +26,10 @@ const Title = styled.h3`
     position: absolute;
     font-size: 40px;
     font-family: 'Asap';
+
+    @media (max-width: 700px) {
+        font-size: 20px;
+    }
 `
 
 const Tech = styled.div`
@@ -31,6 +40,11 @@ const Tech = styled.div`
     font-size: 30px;
     text-align: center;
     font-family: 'Asap';
+
+    @media (max-width: 700px) {
+        width: 200px;
+        font-size: 15px;
+    }
 `
 
 const ButtonContainer = styled.div`
@@ -41,6 +55,10 @@ const ButtonContainer = styled.div`
     height: 10em;
     width: 100%;
     margin-top: 12em;
+
+    @media (max-width: 700px) {
+        margin-top: 8em;
+    }
 `
 
 const Button = styled.a`
@@ -53,12 +71,17 @@ const Button = styled.a`
     padding: 10px 15px;
     width: 10em;
     font-size: 20px;
+
+    @media (max-width: 700px) {
+        padding: 3px 7px;
+        width: 5em;
+    }
 `
 
 const Macbook: React.FC<{code: string, name: string, tech: string}> = (props) => {
     return(
         <LaptopContainer>
-            <Laptop src={require("./../../Images/MacBook2.png")} alt="macbook" style={{width: '1000px', height: '600px', position: 'relative'}}/>
+            <Laptop src={require("./../../Images/MacBook2.png")} alt="macbook"/>
             <Title>{props.name}</Title>
             <Tech>Tech Used: {props.tech}</Tech>
             <ButtonContainer>
