@@ -13,6 +13,10 @@ const ContainerTwo = styled.div`
     display: flex;
     width: 100%;
     height: 80vh;
+
+    @media (max-width: 700px) {
+        flex-direction: column;
+    }
 `
 
 const AnimationContainer = styled.div`
@@ -21,6 +25,10 @@ const AnimationContainer = styled.div`
     align-items: center;
     width: 50%;
     height: 100%;
+
+    @media (max-width: 700px) {
+        width: 100%;
+    }
 `
 
 const InfoContainer = styled.div`
@@ -28,6 +36,10 @@ const InfoContainer = styled.div`
     justify-content: center;
     align-items: center;
     width: 50%;
+
+    @media (max-width: 700px) {
+        width: 100%;
+    }
 `
 
 const gradient = keyframes`
@@ -86,12 +98,20 @@ const Question = styled.h2`
     margin-bottom: auto;
     color: white;
     font-family: 'Oxygen';
+
+    @media (max-width: 700px) {
+        font-size: 20px;
+    }
 `
 
 const Answer = styled.p`
     font-size: 25px;
     color: white;
     font-family: 'Dosis';
+
+    @media (max-width: 700px) {
+        font-size: 15px;
+    }
 `
 
 const Footer = styled.footer`
@@ -100,6 +120,10 @@ const Footer = styled.footer`
     align-items: center;
     width: 100%;
     position: relative;
+
+    @media (max-width: 700px) {
+        position: static;
+    }
 `
 
 const FooterMessage = styled.p`
@@ -117,6 +141,10 @@ const Back2TopContainer = styled.div`
     left: 0px; bottom: 0px;
     /* animation: ${bounce} 0.9s infinite linear; */
     cursor: pointer;
+
+    @media (max-width: 700px) {
+        display: none;
+    }
 `
 
 const AboutMe = () => {
