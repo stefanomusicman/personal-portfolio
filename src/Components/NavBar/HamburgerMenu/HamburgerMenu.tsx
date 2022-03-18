@@ -3,6 +3,7 @@ import { slide as Menu } from 'react-burger-menu';
 import './HamburgerMenu.css';
 
 const HamburgerMenu = () => {
+
   return (
     <Menu right>
       <a className="menu-item" href="https://github.com/stefanomusicman" target='_blank' rel="noopener noreferrer">GitHub</a>

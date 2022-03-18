@@ -57,6 +57,12 @@ const IconsBox = styled.div`
     }
 `
 
+const HamburgerBox = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`
+
 
 const NavBar = () => {
     
@@ -81,7 +87,9 @@ const NavBar = () => {
                 <FaCoffee style={{color: 'white', height: '35px', width: '35px', order: '2'}}/>
                 <HiCode style={{color: 'white', height: '35px', width: '35px', order: '3'}}/>
             </IconsBox>}
-            {isMobile && <HamburgerMenu />}
+            {isMobile && <HamburgerBox> 
+                <HamburgerMenu />
+            </HamburgerBox>}
         </NavBarContainer>
     )
 }
