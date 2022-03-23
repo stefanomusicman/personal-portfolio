@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import styled from "styled-components";
 import { IoMusicalNotes } from 'react-icons/io5';
 import { FaCoffee } from 'react-icons/fa';
@@ -66,16 +66,7 @@ const HamburgerBox = styled.div`
 
 const NavBar = () => {
     
-    const width = window.innerWidth;
-    const [isMobile, setIsMobile] = useState(false);
-
-    useEffect(() => {
-        if(width <= 700) {
-            setIsMobile(true)
-        } else {
-            setIsMobile(false)
-        }
-    }, [width]);
+    const isMobile = window.innerWidth <= 700;
 
     return(
         <NavBarContainer id="nav">

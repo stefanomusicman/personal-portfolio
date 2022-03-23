@@ -13,7 +13,7 @@ type Info = {
     name: string,
     techUsed: string,
     sourceCodeLink: string,
-    // demoLink: string
+    demoLink: string
     id: number
 }
 
@@ -22,18 +22,21 @@ const projectInfo: Info[] = [
         name: 'Food Order App',
         techUsed: 'React, CSS Modules, React Router',
         sourceCodeLink: 'https://github.com/stefanomusicman/food-order-app',
+        demoLink: 'https://food-order-app-d8cc7.web.app/',
         id: 1
     },
     {
         name: 'Book Tracker',
         techUsed: 'React, Styled Components',
         sourceCodeLink: 'https://github.com/stefanomusicman/first-app',
+        demoLink: 'https://book-tracker-3ecf0.web.app/',
         id: 2
     },
     {
         name: 'Personal Portfolio',
         techUsed: 'React, TypeScript, Styled Components, UI Design - FIGMA',
         sourceCodeLink: 'https://github.com/stefanomusicman/personal-portfolio',
+        demoLink: '',
         id: 3
     }
 ];
@@ -138,7 +141,7 @@ const Projects = () => {
                     modules={[Navigation]}
                     className='mySwiper'
                 >
-                    {projectInfo.map((item) => <SwiperSlide key={item.id}> <Macbook code={item.sourceCodeLink} name={item.name} tech={item.techUsed} key={item.id}/> </SwiperSlide>)}
+                    {projectInfo.map((item) => <SwiperSlide key={item.id}> <Macbook demo={item.demoLink} code={item.sourceCodeLink} name={item.name} tech={item.techUsed} key={item.id}/> </SwiperSlide>)}
                 </Swiper>
             </Carousel>
             <NextSection>

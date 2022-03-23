@@ -78,14 +78,14 @@ const Button = styled.a`
     }
 `
 
-const Macbook: React.FC<{code: string, name: string, tech: string}> = (props) => {
+const Macbook: React.FC<{code: string, name: string, tech: string, demo: string}> = (props) => {
     return(
         <LaptopContainer>
             <Laptop src={require("./../../Images/MacBook2.png")} alt="macbook"/>
             <Title>{props.name}</Title>
             <Tech>Tech Used: {props.tech}</Tech>
             <ButtonContainer>
-                <Button>Demo</Button>
+                <Button href={props.demo} target='_blank'>Demo</Button>
                 <Button href={props.code} target='_blank' style={{marginLeft: '40px'}}>{`Code </>`}</Button>
             </ButtonContainer>
         </LaptopContainer>

@@ -7,7 +7,7 @@ const HamburgerMenu = () => {
   return (
     <Menu right>
       <a className="menu-item" href="https://github.com/stefanomusicman" target='_blank' rel="noopener noreferrer">GitHub</a>
-      <a className="menu-item" href="/salads">LinkedIn</a>
+      <a className="menu-item" href="https://www.linkedin.com/in/stefano-proietti-286497235/" target='_blank' rel="noopener noreferrer">LinkedIn</a>
       <a className="menu-item" href="/pizzas">Resumé</a>
     </Menu>
   );
