@@ -57,9 +57,15 @@ const Anchor = styled.a`
 const IconsBar = () => {
     return(
         <IconsContainer>
-            <Anchor href="https://github.com/stefanomusicman" target='_blank' rel="noopener noreferrer"><ImGithub style={{width: '40px', height: '40px', padding: '10px', color: 'white'}}/></Anchor>
-            <Anchor href="https://www.linkedin.com/in/stefano-proietti-286497235/" target='_blank' rel="noopener noreferrer"><BsLinkedin style={{width: '40px', height: '40px', padding: '10px', color: 'white'}}/></Anchor>
-            <Anchor><CgFileDocument style={{width: '40px', height: '40px', padding: '10px', color: 'white'}}/></Anchor>
+            <Anchor href="https://github.com/stefanomusicman" target='_blank' rel="noopener noreferrer">
+                <ImGithub style={{width: '40px', height: '40px', padding: '10px', color: 'white'}}/>
+            </Anchor>
+            <Anchor href="https://www.linkedin.com/in/stefano-proietti-286497235/" target='_blank' rel="noopener noreferrer">
+                <BsLinkedin style={{width: '40px', height: '40px', padding: '10px', color: 'white'}}/>
+            </Anchor>
+            <Anchor href="https://drive.google.com/file/d/1_8YijFCrMIIKeTY2HjQEsLecA6-mjEB7/view?usp=sharing" target='_blank' rel="noopener noreferrer">
+                <CgFileDocument style={{width: '40px', height: '40px', padding: '10px', color: 'white'}}/>
+            </Anchor>
         </IconsContainer>
     )   
 }

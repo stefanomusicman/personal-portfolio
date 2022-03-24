@@ -1,6 +1,5 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
-import { bounce } from "../HeroSection/HeroSection";
 import VersionControl from "./VersionControlSVG/VersionControl";
 import { PrimaryContainer } from "../HeroSection/HeroSection";
 import { TitleContainer } from "../Projects/Projects";
@@ -85,7 +84,6 @@ const InfoBox = styled.div`
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
 	background-size: 400% 400%;
 	animation: ${gradient} 10s ease infinite, ${hover} 3s infinite linear;
-	/* height: 100vh; */
 `
 
 const TextBox = styled.div`
@@ -139,7 +137,6 @@ const Back2TopContainer = styled.div`
     align-items: center;
     position: absolute;
     left: 0px; bottom: 0px;
-    /* animation: ${bounce} 0.9s infinite linear; */
     cursor: pointer;
 
     @media (max-width: 700px) {

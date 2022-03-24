@@ -8,14 +8,14 @@ import ParticlesBackground from "./Components/ParticlesBackground/ParticlesBackg
 
 function App() {
   return (
-    <div>
+    <React.Fragment>
       <ParticlesBackground />
       <NavBar />
       <HeroSection />
       <Projects />
       <AboutMe />
       <IconsBar />
-    </div>
+    </React.Fragment>
   );
 }
 

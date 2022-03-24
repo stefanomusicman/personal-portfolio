@@ -79,6 +79,13 @@ const NextSection = styled.div`
     align-items: center;
 `
 
+export const Text2 = styled.p`
+    font-size: 35px;
+    height: 40px;
+    font-family: 'Oswald';
+    color: white;
+`
+
 export const bounce = keyframes`
     10% {
         transform: translateY(5px);
@@ -121,7 +128,7 @@ const HeroSection = () => {
             </ContainerTwo>
             <ContainerThree>
                 <NextSection>
-                    <Text style={{fontSize: '35px', height: '40px'}}>Projects</Text>
+                    <Text2>Projects</Text2>
                     <ButtonBox >
                         <Link to="projects" spy={true} smooth={true}><BsArrowDownCircle style={{color: 'white', width: '36px', height: '36px'}} /></Link>
                     </ButtonBox>

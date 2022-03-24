@@ -2,6 +2,7 @@ import React from "react";
 import styled, {  keyframes } from "styled-components";
 import Macbook from "./Macbook";
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Text2 } from "../HeroSection/HeroSection";
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
@@ -47,6 +48,7 @@ const PrimaryContainer = styled.div`
     width: 80%;
     justify-content: center;
     margin: auto;
+    margin-top: 30px;
     position: relative;
 
     @media (max-width: 700px) {
@@ -89,12 +91,6 @@ const NextSection = styled.div`
     align-items: center;
 `
 
-const Text = styled.p`
-    font-size: '60px';
-    color: white;
-    font-family: 'Oswald';
-`
-
 const bounce = keyframes`
     10% {
         transform: translateY(5px);
@@ -128,7 +124,7 @@ const ButtonBox = styled.div`
 const Projects = () => {
 
     return(
-        <PrimaryContainer id="projects" style={{marginTop: '30px'}}>
+        <PrimaryContainer id="projects">
             <TitleContainer>
                 <Title>Projects</Title>
             </TitleContainer>
@@ -145,7 +141,7 @@ const Projects = () => {
                 </Swiper>
             </Carousel>
             <NextSection>
-                <Text style={{fontSize: '35px', height: '40px'}}>About Me</Text>
+                <Text2>About Me</Text2>
                 <ButtonBox>
                     <Link to="about me" spy={true} smooth={true}><BsArrowDownCircle style={{color: 'white', width: '36px', height: '36px'}} /></Link>
                 </ButtonBox>
