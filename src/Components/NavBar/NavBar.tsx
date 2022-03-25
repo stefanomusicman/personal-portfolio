@@ -5,6 +5,7 @@ import { FaCoffee } from 'react-icons/fa';
 import { HiCode } from 'react-icons/hi';
 import HamburgerMenu from '../NavBar/HamburgerMenu/HamburgerMenu';
 
+/* Primary Container */
 const NavBarContainer = styled.div`
     display: flex;
     justify-content: space-between;
@@ -20,6 +21,7 @@ const NavBarContainer = styled.div`
     }
 `
 
+/* Name Container */
 const NameContainer = styled.div`
     display: flex;
     justify-content: start;
@@ -44,7 +46,7 @@ const Name = styled.h3`
     }
 `
 
-
+/* Icons Container */ 
 const IconsBox = styled.div`
     display: flex;
     height: 100%;
@@ -73,12 +75,14 @@ const NavBar = () => {
             <NameContainer>
                 <Name>Stefano Proietti</Name>
             </NameContainer>
-            {!isMobile && <IconsBox>
+            {!isMobile && 
+            <IconsBox>
                 <IoMusicalNotes style={{color: 'white', height: '35px', width: '35px', order: '1'}}/>
                 <FaCoffee style={{color: 'white', height: '35px', width: '35px', order: '2'}}/>
                 <HiCode style={{color: 'white', height: '35px', width: '35px', order: '3'}}/>
             </IconsBox>}
-            {isMobile && <HamburgerBox> 
+            {isMobile && 
+            <HamburgerBox> 
                 <HamburgerMenu />
             </HamburgerBox>}
         </NavBarContainer>

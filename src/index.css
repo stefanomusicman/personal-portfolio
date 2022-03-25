@@ -10,4 +10,7 @@ body {
   background-image: url('Images/shattered-island.gif');
 }
 
-
+html {
+  visibility: visible;
+  opacity: 1;
+}

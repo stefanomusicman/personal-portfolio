@@ -123,6 +123,8 @@ const ButtonBox = styled.div`
 
 const Projects = () => {
 
+    const isMobile = window.innerWidth <= 700;
+
     return(
         <PrimaryContainer id="projects">
             <TitleContainer>
@@ -133,7 +135,7 @@ const Projects = () => {
                     slidesPerView={1}
                     spaceBetween={30}
                     loop={true}
-                    navigation={true}
+                    navigation={isMobile ? false : true}
                     modules={[Navigation]}
                     className='mySwiper'
                 >

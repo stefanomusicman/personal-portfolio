@@ -84,6 +84,10 @@ const InfoBox = styled.div`
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
 	background-size: 400% 400%;
 	animation: ${gradient} 10s ease infinite, ${hover} 3s infinite linear;
+
+    @media (max-width: 700px) {
+        padding: 35px;
+    }
 `
 
 const TextBox = styled.div`
@@ -129,6 +133,7 @@ const FooterMessage = styled.p`
     font-size: 15px;
 `
 
+/* Container for arrow button on left side */ 
 const Back2TopContainer = styled.div`
     display: flex;
     width: 7.8em;
