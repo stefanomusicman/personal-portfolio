@@ -91,6 +91,13 @@ const NextSection = styled.div`
     align-items: center;
 `
 
+const CustomSwiper = styled(Swiper)`
+    .swiper-button-next, .swiper-button-prev{
+        color: white;
+    }
+`;
+
+
 const bounce = keyframes`
     10% {
         transform: translateY(5px);
@@ -131,16 +138,17 @@ const Projects = () => {
                 <Title>Projects</Title>
             </TitleContainer>
             <Carousel>
-                <Swiper 
+                <CustomSwiper 
                     slidesPerView={1}
                     spaceBetween={30}
                     loop={true}
                     navigation={isMobile ? false : true}
                     modules={[Navigation]}
-                    className='mySwiper'
+                    className='swiper-button-white'
+                    
                 >
-                    {projectInfo.map((item) => <SwiperSlide key={item.id}> <Macbook demo={item.demoLink} code={item.sourceCodeLink} name={item.name} tech={item.techUsed} key={item.id}/> </SwiperSlide>)}
-                </Swiper>
+                    {projectInfo.map((item) => <SwiperSlide className='swiper-button-white' key={item.id}> <Macbook demo={item.demoLink} code={item.sourceCodeLink} name={item.name} tech={item.techUsed} key={item.id}/> </SwiperSlide>)}
+                </CustomSwiper>
             </Carousel>
             <NextSection>
                 <Text2>About Me</Text2>
