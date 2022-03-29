@@ -1,13 +1,14 @@
 import React from "react";
-import styled, {  keyframes } from "styled-components";
+import styled from "styled-components";
 import Macbook from "./Macbook";
+import { bounce } from "../HeroSection/HeroSection";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Text2 } from "../HeroSection/HeroSection";
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { Navigation } from "swiper";
-import { BsArrowDownCircle } from 'react-icons/bs';
+import { DownArrow } from "../HeroSection/HeroSection";
 import { Link } from 'react-scroll';
 
 type Info = {
@@ -97,26 +98,6 @@ const CustomSwiper = styled(Swiper)`
     }
 `;
 
-
-const bounce = keyframes`
-    10% {
-        transform: translateY(5px);
-    }
-    30% {
-        transform: translateY(12px);
-
-    }
-    50% {
-        transform: translateY(20px);
-    }
-    75% {
-        transform: translateY(12px);
-    }
-    100% {
-        transform: translateY(0px);
-    }
-`
-
 const ButtonBox = styled.div`
     display: flex;
     justify-content: center;
@@ -145,15 +126,19 @@ const Projects = () => {
                     navigation={isMobile ? false : true}
                     modules={[Navigation]}
                     className='swiper-button-white'
-                    
                 >
-                    {projectInfo.map((item) => <SwiperSlide className='swiper-button-white' key={item.id}> <Macbook demo={item.demoLink} code={item.sourceCodeLink} name={item.name} tech={item.techUsed} key={item.id}/> </SwiperSlide>)}
+                    {projectInfo.map((item) => 
+                        <SwiperSlide className='swiper-button-white' key={item.id}> 
+                            <Macbook demo={item.demoLink} code={item.sourceCodeLink} name={item.name} tech={item.techUsed} key={item.id}/> 
+                        </SwiperSlide>)}
                 </CustomSwiper>
             </Carousel>
             <NextSection>
                 <Text2>About Me</Text2>
                 <ButtonBox>
-                    <Link to="about me" spy={true} smooth={true}><BsArrowDownCircle style={{color: 'white', width: '36px', height: '36px'}} /></Link>
+                    <Link to="about me" spy={true} smooth={true}>
+                        <DownArrow/>
+                    </Link>
                 </ButtonBox>
             </NextSection>
         </PrimaryContainer>

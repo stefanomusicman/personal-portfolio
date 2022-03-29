@@ -11,7 +11,7 @@ export const PrimaryContainer = styled.div`
     margin-left: 7.8em;
     margin-right: 7.8em;
 
-    @media (max-width: 700px) {
+    @media (max-width: 1000px) {
         margin-left: 0;
         margin-right: 0;
     }
@@ -23,7 +23,7 @@ export const ContainerTwo = styled.div`
     width: 100%;
     height: 52vh; //originally 55vh
 
-    @media (max-width: 700px) {
+    @media (max-width: 1000px) {
         flex-direction: column;
         height: auto;
     }
@@ -34,7 +34,7 @@ const SloganBox = styled.div`
     align-items: center;
     width: 50%;
 
-    @media (max-width: 700px) {
+    @media (max-width: 1000px) {
         justify-content: center;
         width: 90%;
         padding: 20px;
@@ -47,9 +47,17 @@ const Text = styled.p`
     font-size: 60px;
     font-family: 'Oswald';
 
+    @media (max-width: 1200px) {
+        font-size: 50px;
+    }
+
     @media (max-width: 700px) {
         font-size: 25px;
     }
+`
+
+const Strong = styled.strong`
+    color: #c04343
 `
 
 const GifBox = styled.div`
@@ -58,9 +66,9 @@ const GifBox = styled.div`
     align-items: center;
     width: 50%;
 
-    @media (max-width: 700px) {
+    @media (max-width: 1000px) {
         width: 100%;
-        height: 12em;
+        height: 15em;
         justify-content: center;
     }
 `
@@ -77,6 +85,7 @@ const NextSection = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 10em;
 `
 
 export const Text2 = styled.p`
@@ -104,7 +113,7 @@ export const bounce = keyframes`
     }
 `
 
-const ButtonBox = styled.div`
+export const ButtonBox = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
@@ -114,13 +123,19 @@ const ButtonBox = styled.div`
     cursor: pointer;
 `
 
+export const DownArrow = styled(BsArrowDownCircle)`
+    color: white;
+    width: 36px;
+    height: 36px;
+`
+
 const HeroSection = () => {
     return(
         <PrimaryContainer>
             <SlideShowTwo />
             <ContainerTwo>
                 <SloganBox>
-                    <Text>From making music to building web applications, I love letting my <strong style={{color: '#c04343'}}>creativity</strong> go wild!</Text>
+                    <Text>From making music to building web applications, I love letting my <Strong>creativity</Strong> go wild!</Text>
                 </SloganBox>
                 <GifBox>
                     <CodeThinker />
@@ -130,7 +145,7 @@ const HeroSection = () => {
                 <NextSection>
                     <Text2>Projects</Text2>
                     <ButtonBox >
-                        <Link to="projects" spy={true} smooth={true}><BsArrowDownCircle style={{color: 'white', width: '36px', height: '36px'}} /></Link>
+                        <Link to="projects" spy={true} smooth={true}><DownArrow/></Link>
                     </ButtonBox>
                 </NextSection>
             </ContainerThree>

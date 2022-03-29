@@ -13,7 +13,7 @@ const ContainerTwo = styled.div`
     width: 100%;
     height: 80vh;
 
-    @media (max-width: 700px) {
+    @media (max-width: 1000px) {
         flex-direction: column;
     }
 `
@@ -25,7 +25,7 @@ const AnimationContainer = styled.div`
     width: 50%;
     height: 100%;
 
-    @media (max-width: 700px) {
+    @media (max-width: 1000px) {
         width: 100%;
     }
 `
@@ -36,7 +36,7 @@ const InfoContainer = styled.div`
     align-items: center;
     width: 50%;
 
-    @media (max-width: 700px) {
+    @media (max-width: 1000px) {
         width: 100%;
     }
 `
@@ -85,7 +85,11 @@ const InfoBox = styled.div`
 	background-size: 400% 400%;
 	animation: ${gradient} 10s ease infinite, ${hover} 3s infinite linear;
 
-    @media (max-width: 700px) {
+    @media (max-width: 1250px) {
+        padding: 45px;
+    }
+
+    @media (max-width: 1000px) {
         padding: 35px;
     }
 `
@@ -101,7 +105,11 @@ const Question = styled.h2`
     color: white;
     font-family: 'Oxygen';
 
-    @media (max-width: 700px) {
+    @media (max-width: 1250px) {
+        font-size: 15px;
+    }
+
+    @media (max-width: 1000px) {
         font-size: 20px;
     }
 `
@@ -111,7 +119,11 @@ const Answer = styled.p`
     color: white;
     font-family: 'Dosis';
 
-    @media (max-width: 700px) {
+    @media (max-width: 1250px) {
+        font-size: 20px;
+    }
+
+    @media (max-width: 1000px) {
         font-size: 15px;
     }
 `
@@ -123,7 +135,7 @@ const Footer = styled.footer`
     width: 100%;
     position: relative;
 
-    @media (max-width: 700px) {
+    @media (max-width: 1000px) {
         position: static;
     }
 `
@@ -144,9 +156,20 @@ const Back2TopContainer = styled.div`
     left: 0px; bottom: 0px;
     cursor: pointer;
 
-    @media (max-width: 700px) {
+    @media (max-width: 1000px) {
         display: none;
     }
+`
+
+const HeartIcon = styled(BsFillHeartFill)`
+    color: red;
+`
+
+const UpArrow = styled(BsArrowUpCircle)`
+    width: 40px; 
+    height: 40px; 
+    color: white; 
+    margin: auto;
 `
 
 const AboutMe = () => {
@@ -178,11 +201,11 @@ const AboutMe = () => {
                     </InfoContainer>
                 </ContainerTwo>
                 <Footer>
-                    <FooterMessage>Made with <BsFillHeartFill style={{color: 'red'}}/> by Stefano Proietti</FooterMessage>
+                    <FooterMessage>Made with <HeartIcon/> by Stefano Proietti</FooterMessage>
                 </Footer>
             </PrimaryContainer>
             <Back2TopContainer>
-                    <Link to="nav" spy={true} smooth={true}><BsArrowUpCircle style={{width: '40px', height: '40px', color: 'white', margin: 'auto'}}/></Link>
+                    <Link to="nav" spy={true} smooth={true}><UpArrow/></Link>
             </Back2TopContainer>
         </div>
     )

@@ -28,7 +28,7 @@ const NameContainer = styled.div`
     align-items: center;
     height: 100%;
 
-    @media (max-width: 700px) {
+    @media (max-width: 800px) {
         width: 100%;
         justify-content: center;
     }
@@ -41,7 +41,7 @@ const Name = styled.h3`
     font-weight: bold;
     font-family: 'Oswald';
 
-    @media (max-width: 700px) {
+    @media (max-width: 800px) {
         font-size: 25px;
     }
 `
@@ -54,7 +54,7 @@ const IconsBox = styled.div`
     justify-content: space-around;
     align-items: center;
 
-    @media (max-width: 700px) {
+    @media (max-width: 800px) {
         display: none;
     }
 `
@@ -68,7 +68,7 @@ const HamburgerBox = styled.div`
 
 const NavBar = () => {
     
-    const isMobile = window.innerWidth <= 700;
+    const isMobile = window.innerWidth <= 800;
 
     return(
         <NavBarContainer id="nav">

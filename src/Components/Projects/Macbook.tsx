@@ -14,7 +14,7 @@ const Laptop = styled.img`
     height: 600px;
     position: relative;
 
-    @media (max-width: 700px) {
+    @media (max-width: 1000px) {
         width: 500px;
         height: 300px;
     }
@@ -27,7 +27,7 @@ const Title = styled.h3`
     font-size: 40px;
     font-family: 'Asap';
 
-    @media (max-width: 700px) {
+    @media (max-width: 1000px) {
         font-size: 20px;
     }
 `
@@ -41,7 +41,7 @@ const Tech = styled.div`
     text-align: center;
     font-family: 'Asap';
 
-    @media (max-width: 700px) {
+    @media (max-width: 1000px) {
         width: 200px;
         font-size: 15px;
     }
@@ -56,7 +56,7 @@ const ButtonContainer = styled.div`
     width: 100%;
     margin-top: 12em;
 
-    @media (max-width: 700px) {
+    @media (max-width: 1000px) {
         margin-top: 8em;
     }
 `
@@ -72,7 +72,7 @@ const Button = styled.a`
     width: 10em;
     font-size: 20px;
 
-    @media (max-width: 700px) {
+    @media (max-width: 1000px) {
         padding: 3px 7px;
         width: 5em;
     }
@@ -85,7 +85,7 @@ const Macbook: React.FC<{code: string, name: string, tech: string, demo: string}
             <Title>{props.name}</Title>
             <Tech>Tech Used: {props.tech}</Tech>
             <ButtonContainer>
-                <Button href={props.demo} target='_blank'>Demo</Button>
+                <Button href={props.demo} target='_blank' style={{visibility: props.name === 'Personal Portfolio' ? 'hidden' : 'visible'}}>Demo</Button>
                 <Button href={props.code} target='_blank' style={{marginLeft: '40px'}}>{`Code </>`}</Button>
             </ButtonContainer>
         </LaptopContainer>
