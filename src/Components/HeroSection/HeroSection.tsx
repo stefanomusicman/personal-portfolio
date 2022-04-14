@@ -49,10 +49,12 @@ const Text = styled.p`
 
     @media (max-width: 1200px) {
         font-size: 50px;
+        text-align: center;
     }
 
     @media (max-width: 700px) {
         font-size: 25px;
+        text-align: center;
     }
 `
 

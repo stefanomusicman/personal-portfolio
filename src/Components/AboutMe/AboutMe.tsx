@@ -8,6 +8,14 @@ import { BsFillHeartFill } from 'react-icons/bs';
 import { BsArrowUpCircle } from 'react-icons/bs';
 import { Link } from 'react-scroll';
 
+const Main = styled.div`
+    position: relative;
+
+    @media (max-width: 1000px) {
+        position: static;
+    }
+`
+
 const ContainerTwo = styled.div`
     display: flex;
     width: 100%;
@@ -136,7 +144,7 @@ const Footer = styled.footer`
     position: relative;
 
     @media (max-width: 1000px) {
-        position: static;
+        display: none;
     }
 `
 
@@ -174,8 +182,8 @@ const UpArrow = styled(BsArrowUpCircle)`
 
 const AboutMe = () => {
     return(
-        <div style={{position: 'relative'}}>
-            <PrimaryContainer id="about me">
+        <Main id="about me">
+            <PrimaryContainer>
                 <TitleContainer>
                     <Title>About Me</Title>
                 </TitleContainer>
@@ -207,7 +215,7 @@ const AboutMe = () => {
             <Back2TopContainer>
                     <Link to="nav" spy={true} smooth={true}><UpArrow/></Link>
             </Back2TopContainer>
-        </div>
+        </Main>
     )
 }
 

@@ -15,15 +15,21 @@ const Laptop = styled.img`
     position: relative;
 
     @media (max-width: 1000px) {
-        width: 500px;
-        height: 300px;
+        width: 400px;
+        height: 250px;
     }
+`
+
+const InfoContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
 `
 
 const Title = styled.h3`
     color: white;
-    margin-bottom: 10em;
-    position: absolute;
     font-size: 40px;
     font-family: 'Asap';
 
@@ -34,9 +40,7 @@ const Title = styled.h3`
 
 const Tech = styled.div`
     color: white;
-    margin-bottom: 3em;
-    width: 700px;
-    position: absolute;
+    width: 75%;
     font-size: 30px;
     text-align: center;
     font-family: 'Asap';
@@ -51,13 +55,11 @@ const ButtonContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
     height: 10em;
     width: 100%;
-    margin-top: 12em;
 
     @media (max-width: 1000px) {
-        margin-top: 8em;
+        height: 4em;
     }
 `
 
@@ -73,8 +75,9 @@ const Button = styled.a`
     font-size: 20px;
 
     @media (max-width: 1000px) {
-        padding: 3px 7px;
+        padding: 2px 5px;
         width: 5em;
+        font-size: 15px;
     }
 `
 
@@ -82,12 +85,14 @@ const Macbook: React.FC<{code: string, name: string, tech: string, demo: string}
     return(
         <LaptopContainer>
             <Laptop src={require("./../../Images/MacBook2.png")} alt="macbook"/>
-            <Title>{props.name}</Title>
-            <Tech>Tech Used: {props.tech}</Tech>
-            <ButtonContainer>
-                <Button href={props.demo} target='_blank' style={{visibility: props.name === 'Personal Portfolio' ? 'hidden' : 'visible'}}>Demo</Button>
-                <Button href={props.code} target='_blank' style={{marginLeft: '40px'}}>{`Code </>`}</Button>
-            </ButtonContainer>
+            <InfoContainer>
+                <Title>{props.name}</Title>
+                <Tech>Tech Used: {props.tech}</Tech>
+                <ButtonContainer>
+                    <Button href={props.demo} target='_blank' style={{visibility: props.name === 'Personal Portfolio' ? 'hidden' : 'visible'}}>Demo</Button>
+                    <Button href={props.code} target='_blank' style={{marginLeft: '40px'}}>{`Code </>`}</Button>
+                </ButtonContainer>
+            </InfoContainer>
         </LaptopContainer>
     )
 }
