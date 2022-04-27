@@ -21,25 +21,32 @@ type Info = {
 
 const projectInfo: Info[] = [
     {
-        name: 'Food Order App',
-        techUsed: 'React, CSS Modules, React Router',
-        sourceCodeLink: 'https://github.com/stefanomusicman/food-order-app',
-        demoLink: 'https://food-order-app-d8cc7.web.app/',
-        id: 1
-    },
-    {
         name: 'Book Tracker',
         techUsed: 'React, Styled Components',
         sourceCodeLink: 'https://github.com/stefanomusicman/first-app',
         demoLink: 'https://book-tracker-3ecf0.web.app/',
+        id: 1
+    },
+    {
+        name: 'Food Order App',
+        techUsed: 'React, CSS Modules, React Router',
+        sourceCodeLink: 'https://github.com/stefanomusicman/food-order-app',
+        demoLink: 'https://food-order-app-d8cc7.web.app/',
         id: 2
     },
     {
+        name: 'Band website',
+        techUsed: 'React + TypeScript, Styled Components',
+        sourceCodeLink: 'https://github.com/stefanomusicman/amavi-site',
+        demoLink: 'https://amavi-site.firebaseapp.com/',
+        id: 3
+    },
+    {
         name: 'Personal Portfolio',
-        techUsed: 'React, TypeScript, Styled Components, UI Design - FIGMA',
+        techUsed: 'React + TypeScript, Styled Components, UI Design - FIGMA',
         sourceCodeLink: 'https://github.com/stefanomusicman/personal-portfolio',
         demoLink: '',
-        id: 3
+        id: 4
     }
 ];
 
@@ -127,10 +134,15 @@ const Projects = () => {
                     modules={[Navigation]}
                     className='swiper-button-white'
                 >
-                    {projectInfo.map((item) => 
-                        <SwiperSlide className='swiper-button-white' key={item.id}> 
-                            <Macbook demo={item.demoLink} code={item.sourceCodeLink} name={item.name} tech={item.techUsed} key={item.id}/> 
-                        </SwiperSlide>)}
+                {projectInfo.map((item) => 
+                    <SwiperSlide className='swiper-button-white' key={item.id}> 
+                        <Macbook 
+                            demo={item.demoLink} 
+                            code={item.sourceCodeLink} 
+                            name={item.name} 
+                            tech={item.techUsed} 
+                            key={item.id}/> 
+                    </SwiperSlide>)}
                 </CustomSwiper>
             </Carousel>
             <NextSection>
