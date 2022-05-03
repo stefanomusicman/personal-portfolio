@@ -63,7 +63,7 @@ const IconsBar = () => {
             <Anchor href="https://www.linkedin.com/in/stefano-proietti-286497235/" target='_blank' rel="noopener noreferrer">
                 <BsLinkedin style={{width: '40px', height: '40px', padding: '10px', color: 'white'}}/>
             </Anchor>
-            <Anchor href="https://drive.google.com/file/d/1dJFMbHSaYJRzG2b_352IEGfMrW3dh1qp/view?usp=sharing" target='_blank' rel="noopener noreferrer">
+            <Anchor href="https://drive.google.com/file/d/1KvxPDevFPi-9VvTMwOtIqv40LMk4wp_3/view?usp=sharing" target='_blank' rel="noopener noreferrer">
                 <CgFileDocument style={{width: '40px', height: '40px', padding: '10px', color: 'white'}}/>
             </Anchor>
         </IconsContainer>
