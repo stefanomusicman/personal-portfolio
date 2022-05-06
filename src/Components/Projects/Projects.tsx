@@ -29,24 +29,31 @@ const projectInfo: Info[] = [
     },
     {
         name: 'Food Order App',
-        techUsed: 'React, CSS Modules, React Router',
+        techUsed: 'React, CSS Modules, React Router - Not intended for Mobile',
         sourceCodeLink: 'https://github.com/stefanomusicman/food-order-app',
         demoLink: 'https://food-order-app-d8cc7.web.app/',
         id: 2
     },
     {
-        name: 'Band website',
+        name: 'Password Strength Tester',
+        techUsed: 'Next.JS + TypeScript - Progressive Web App/Not intended for mobile',
+        sourceCodeLink: 'https://github.com/stefanomusicman/password-strength-verification',
+        demoLink: 'https://password-strength-verification.vercel.app/',
+        id: 3
+    },
+    {
+        name: 'Band Website',
         techUsed: 'React + TypeScript, Styled Components',
         sourceCodeLink: 'https://github.com/stefanomusicman/amavi-site',
         demoLink: 'https://amavi-site.firebaseapp.com/',
-        id: 3
+        id: 4
     },
     {
         name: 'Personal Portfolio',
         techUsed: 'React + TypeScript, Styled Components, UI Design - FIGMA',
         sourceCodeLink: 'https://github.com/stefanomusicman/personal-portfolio',
         demoLink: '',
-        id: 4
+        id: 5
     }
 ];
 

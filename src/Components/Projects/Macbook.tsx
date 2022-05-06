@@ -40,7 +40,7 @@ const Title = styled.h3`
 
 const Tech = styled.div`
     color: white;
-    width: 75%;
+    width: 65%;
     font-size: 30px;
     text-align: center;
     font-family: 'Asap';
