@@ -1,8 +1,6 @@
 import React from "react";
-import styled from "styled-components";
-// import { IoMusicalNotes } from 'react-icons/io5';
-// import { FaCoffee } from 'react-icons/fa';
-// import { HiCode } from 'react-icons/hi';
+import styled, { keyframes } from "styled-components";
+import { MdLocationOn } from 'react-icons/md';
 import HamburgerMenu from '../NavBar/HamburgerMenu/HamburgerMenu';
 
 /* Primary Container */
@@ -47,17 +45,37 @@ const Name = styled.h3`
 `
 
 /* Icons Container */ 
-// const IconsBox = styled.div`
-//     display: flex;
-//     height: 100%;
-//     width: 250px;
-//     justify-content: space-around;
-//     align-items: center;
+const LocationBox = styled.div`
+    display: flex;
+    height: 100%;
+    width: 250px;
+    justify-content: space-around;
+    align-items: center;
 
-//     @media (max-width: 800px) {
-//         display: none;
-//     }
-// `
+    @media (max-width: 800px) {
+        display: none;
+    }
+`
+
+const Location = styled.h3`
+    color: white;
+    font-size: 40px;
+    font-style: normal;
+    font-family: 'Dosis';
+`
+
+const rotateAnimation = keyframes`
+    from {transform: rotateY(45deg);}
+	to {transform: rotateY(225deg);}
+`
+
+const LocationIcon = styled(MdLocationOn)`
+    color: white;
+    width: 40px;
+    height: 40px;
+    transform: rotateY(45deg);
+    animation: ${rotateAnimation} 2s linear infinite;
+`
 
 const HamburgerBox = styled.div`
     display: flex;
@@ -68,19 +86,18 @@ const HamburgerBox = styled.div`
 
 const NavBar = () => {
     
-    const isMobile = window.innerWidth <= 800;
+    const isMobile: boolean = window.innerWidth <= 800;
 
     return(
         <NavBarContainer id="nav">
             <NameContainer>
                 <Name>Stefano Proietti</Name>
             </NameContainer>
-            {/* {!isMobile && 
-            <IconsBox>
-                <IoMusicalNotes style={{color: 'white', height: '35px', width: '35px', order: '1'}}/>
-                <FaCoffee style={{color: 'white', height: '35px', width: '35px', order: '2'}}/>
-                <HiCode style={{color: 'white', height: '35px', width: '35px', order: '3'}}/>
-            </IconsBox>} */}
+            {!isMobile && 
+            <LocationBox>
+                <Location>Montreal, QC</Location>
+                <LocationIcon />
+            </LocationBox>}
             {isMobile && 
             <HamburgerBox> 
                 <HamburgerMenu />
