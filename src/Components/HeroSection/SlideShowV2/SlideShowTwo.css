@@ -4,6 +4,7 @@
     color: #999;
     margin: auto;
   }
+
   .Iam p {
     height: 50px;
     float: left;
@@ -24,6 +25,7 @@
     white-space: nowrap;
     top: 0;
     left: 0;
+    font-family: 'Asap';
   
   
   /*animation*/

@@ -12,7 +12,7 @@ const SlideShowTwo = () => {
         Musician<br />
         Coffee Connoisseur<br />
         Golfer<br />
-        Life long Student
+        Life Long Student
         </div>
         </b>
 
