@@ -21,38 +21,38 @@ type Info = {
 
 const projectInfo: Info[] = [
     {
+        name: 'Half Caf Blog',
+        techUsed: 'Next.JS + Typescript, Strapi.io, Firebase',
+        sourceCodeLink: 'https://github.com/stefanomusicman/half-caf-blog',
+        demoLink: 'https://www.halfcafblog.com/',
+        id: 1
+    },
+    {
         name: 'Food Order App',
         techUsed: 'React, CSS Modules, React Router - Not intended for Mobile',
         sourceCodeLink: 'https://github.com/stefanomusicman/food-order-app',
         demoLink: 'https://food-order-app-d8cc7.web.app/',
-        id: 1
+        id: 2
     },
     {
         name: 'Book Tracker',
         techUsed: 'React, Styled Components',
         sourceCodeLink: 'https://github.com/stefanomusicman/first-app',
         demoLink: 'https://book-tracker-3ecf0.web.app/',
-        id: 2
+        id: 3
     },
     {
         name: 'Weather App',
         techUsed: 'Next.JS + TypesScript - PWA',
         sourceCodeLink: 'https://github.com/stefanomusicman/weather-app',
         demoLink: 'https://weather-app-rose-two.vercel.app/',
-        id: 3
+        id: 4
     },
     {
         name: 'Password Strength Tester',
         techUsed: 'Next.JS + TypeScript - PWA - Not intended for mobile',
         sourceCodeLink: 'https://github.com/stefanomusicman/password-strength-verification',
         demoLink: 'https://password-strength-verification.vercel.app/',
-        id: 4
-    },
-    {
-        name: 'Landing Page',
-        techUsed: 'React + TypeScript, Styled Components',
-        sourceCodeLink: 'https://github.com/stefanomusicman/amavi-site',
-        demoLink: 'https://amavi-site.firebaseapp.com/',
         id: 5
     },
     {
@@ -62,6 +62,13 @@ const projectInfo: Info[] = [
         demoLink: '',
         id: 6
     }
+    // {
+    //     name: 'Landing Page',
+    //     techUsed: 'React + TypeScript, Styled Components',
+    //     sourceCodeLink: 'https://github.com/stefanomusicman/amavi-site',
+    //     demoLink: 'https://amavi-site.firebaseapp.com/',
+    //     id: 5
+    // },
 ];
 
 const PrimaryContainer = styled.div`
