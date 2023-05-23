@@ -8,7 +8,7 @@ const SlideShowTwo = () => {
         <p>I am a</p>
         <b>
         <div className="innerIam">
-        <strong style={{color: 'hsl(155, 70%, 49%)'}}>Front-End Developer</strong><br/> 
+        <strong style={{color: 'hsl(155, 70%, 49%)'}}>Software Developer</strong><br/> 
         Musician<br />
         Coffee Connoisseur<br />
         Golfer<br />

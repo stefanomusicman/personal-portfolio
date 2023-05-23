@@ -15,51 +15,74 @@ type Info = {
     name: string,
     techUsed: string,
     sourceCodeLink: string,
-    demoLink: string
+    demoLink: string,
+    showGithubLink: boolean,
+    showDemoLink: boolean,
     id: number
 }
 
 const projectInfo: Info[] = [
     {
+        name: 'BarBeat',
+        techUsed: 'Flutter, Firebase, Rive - *Private Repo',
+        sourceCodeLink: '',
+        demoLink: 'https://barbeat.net/',
+        showGithubLink: false,
+        showDemoLink: true,
+        id: 7
+    },
+    {
         name: 'Half Caf Blog',
         techUsed: 'Next.JS + Typescript, Strapi.io, Firebase',
         sourceCodeLink: 'https://github.com/stefanomusicman/half-caf-blog',
         demoLink: 'https://www.halfcafblog.com/',
+        showGithubLink: true,
+        showDemoLink: true,
         id: 1
     },
-    {
-        name: 'Food Order App',
-        techUsed: 'React, CSS Modules, React Router - Not intended for Mobile',
-        sourceCodeLink: 'https://github.com/stefanomusicman/food-order-app',
-        demoLink: 'https://food-order-app-d8cc7.web.app/',
-        id: 2
-    },
-    {
-        name: 'Book Tracker',
-        techUsed: 'React, Styled Components',
-        sourceCodeLink: 'https://github.com/stefanomusicman/first-app',
-        demoLink: 'https://book-tracker-3ecf0.web.app/',
-        id: 3
-    },
-    {
-        name: 'Weather App',
-        techUsed: 'Next.JS + TypesScript - PWA',
-        sourceCodeLink: 'https://github.com/stefanomusicman/weather-app',
-        demoLink: 'https://weather-app-rose-two.vercel.app/',
-        id: 4
-    },
-    {
-        name: 'Password Strength Tester',
-        techUsed: 'Next.JS + TypeScript - PWA - Not intended for mobile',
-        sourceCodeLink: 'https://github.com/stefanomusicman/password-strength-verification',
-        demoLink: 'https://password-strength-verification.vercel.app/',
-        id: 5
-    },
+    // {
+    //     name: 'Food Order App',
+    //     techUsed: 'React, CSS Modules, React Router - Not intended for Mobile',
+    //     sourceCodeLink: 'https://github.com/stefanomusicman/food-order-app',
+    //     demoLink: 'https://food-order-app-d8cc7.web.app/',
+    //     showGithubLink: true,
+    //     showDemoLink: true,
+    //     id: 2
+    // },
+    // {
+    //     name: 'Book Tracker',
+    //     techUsed: 'React, Styled Components',
+    //     sourceCodeLink: 'https://github.com/stefanomusicman/first-app',
+    //     demoLink: 'https://book-tracker-3ecf0.web.app/',
+    //     showGithubLink: true,
+    //     showDemoLink: true,
+    //     id: 3
+    // },
+    // {
+    //     name: 'Weather App',
+    //     techUsed: 'Next.JS + TypesScript - PWA',
+    //     sourceCodeLink: 'https://github.com/stefanomusicman/weather-app',
+    //     demoLink: 'https://weather-app-rose-two.vercel.app/',
+    //     showGithubLink: true,
+    //     showDemoLink: true,
+    //     id: 4
+    // },
+    // {
+    //     name: 'Password Strength Tester',
+    //     techUsed: 'Next.JS + TypeScript - PWA - Not intended for mobile',
+    //     sourceCodeLink: 'https://github.com/stefanomusicman/password-strength-verification',
+    //     demoLink: 'https://password-strength-verification.vercel.app/',
+    //     showGithubLink: true,
+    //     showDemoLink: true,
+    //     id: 5
+    // },
     {
         name: 'Personal Portfolio',
         techUsed: 'React + TypeScript, Styled Components',
         sourceCodeLink: 'https://github.com/stefanomusicman/personal-portfolio',
         demoLink: '',
+        showGithubLink: true,
+        showDemoLink: false,
         id: 6
     }
     // {
@@ -158,6 +181,8 @@ const Projects = () => {
                 {projectInfo.map((item) => 
                     <SwiperSlide className='swiper-button-white' key={item.id}> 
                         <Macbook 
+                            githubLink={item.showGithubLink}
+                            demoLink={item.showDemoLink}
                             demo={item.demoLink} 
                             code={item.sourceCodeLink} 
                             name={item.name} 
